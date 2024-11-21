@@ -29,3 +29,5 @@ int inserirElementoFila(Fila* fi, Aluno al);
 int removerElementoFila(Fila* fi);
 //consultar inicio da lista
 int consultarInicioFila(Fila* fi, Aluno* al);
+//imprimir fila
+void imprimirFila(Fila* fi);

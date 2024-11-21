@@ -22,3 +22,17 @@ typedef struct fila{ // Estrutura de dados da fila | uso de nó descritor
 Fila *criaFila();
 //liberação da fila
 void liberaFila(Fila *fi);
+//tamanho da fila
+int tamanhoFila(Fila *fi);
+//Verificar se a fila está vazia
+int filaVazia(Fila *fi);
+//verificar seestá cheia
+int filaCheia(Fila *fi);
+//inserção na fila
+int insereFila(Fila *fi, Aluno al);
+//remoção da fila
+int removeFila(Fila *fi);
+//consulta do início da fila
+int consultaFila(Fila *fi, Aluno *al);
+//impressão da fila
+void imprimeFila(Fila *fi);

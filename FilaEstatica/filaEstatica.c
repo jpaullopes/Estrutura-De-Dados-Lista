@@ -42,7 +42,7 @@ int verificarFilaVazia(Fila* fi){
 //inserir no final da fila
 int inserirElementoFila(Fila* fi, Aluno al){
     if(fi == NULL) return 0;
-    if(verificarFilaVazia(fi)) return 0;
+    if(verificarFilaCheia(fi)) return 0;
 
     fi->dados[fi->final] = al;
     fi->final = (fi->final+1)%MAX;// garante que a fila seja circular, pois se o final for igual a MAX, ele volta para 0
@@ -61,4 +61,16 @@ int consultarInicioFila(Fila* fi, Aluno* al){
     if(fi == NULL || verificarFilaVazia(fi)) return 0;
     *al = fi->dados[fi->inicio]; //passa o valor do inicio da fila para o ponteiro al
     return 1;
+}
+//imprimir fila
+void imprimirFila(Fila* fi){
+    if(fi == NULL) return;
+    int i = fi->inicio;
+    int contador;
+    for(contador = 0; contador < fi->quantidade; contador++){
+        printf("Matricula: [ %d ]\n", fi->dados[i].matricula);
+        printf("Nome: [ %s ]\n", fi->dados[i].nome);
+        printf("Notas: %.2f | %.2f | %.2f |\n", fi->dados[i].n1, fi->dados[i].n2, fi->dados[i].n3);
+        i = (i+1)%MAX;
+    }
 }
