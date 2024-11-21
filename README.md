@@ -1,6 +1,6 @@
 # Projeto de Fila Dinâmica e Fila Estática
 
-Este projeto está em processo de desenvolvimento e implementará duas estruturas de dados: fila dinâmica e fila estática. O objetivo é fornecer funcionalidades para manipulação de filas, incluindo inserção, remoção, busca e verificação de estado.
+Este projeto implementará duas estruturas de dados: fila dinâmica e fila estática. O objetivo é fornecer funcionalidades para manipulação de filas, incluindo inserção, remoção, busca e verificação de estado.
 
 ## Estrutura do Projeto
 
